@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['middleware' => ['web', 'auth',]], function () {
+    Route::resource('/user', 'UserController');
+
+
+});
+
+    Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
