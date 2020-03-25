@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['middleware' => ['web', 'auth',]], function () {
+Route::group(['middleware' => ['web', 'auth']], function () {
     Route::resource('/user', 'UserController');
 
 
