@@ -132,4 +132,5 @@ class UserController extends Controller
         Session::flash('flash_message', 'User successfully deleted!');
         return redirect()->back();
     }
+
 }

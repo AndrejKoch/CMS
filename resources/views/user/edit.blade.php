@@ -53,7 +53,7 @@
                             <div class="form-group bmd-form-group">
                                 <label class="bmd-label-floating">Role</label>
                                 <input type="text" class="form-control @error('role') is-invalid @enderror"
-                                       name="role" value="{{ $user->role }}">
+                                       name="role" value="{{ $user->getRole->name }}">
                                 @error('role')
                                 <span class="invalid-feedback" role="alert">
                                             <strong>{{ $errors->first('role') }}</strong>

@@ -49,6 +49,13 @@
                     </a>
                 </li>
 
+                <li class="nav-item ">
+                    <a class="nav-link" href="/categories">
+                        <i class="material-icons">content_paste</i>
+                        <p>Categories</p>
+                    </a>
+                </li>
+
             </ul>
         </div>
     </div>

@@ -17,8 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['middleware' => ['web', 'auth']], function () {
+Route::group(['middleware' => ['web', 'auth', 'check.user:Admin']], function () {
     Route::resource('/user', 'UserController');
+    Route::resource('/categories', 'CategoriesController');
 
 
 });

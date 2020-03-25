@@ -46,7 +46,7 @@
                                     <td>{{ $user->id }}</td>
                                     <td>{{ $user->name }}</td>
                                     <td>{{ $user->email }}</td>
-                                    <td>{{ $user->role }}</td>
+                                    <td>{{ $user->getRole->name }}</td>
 
                                     <td>
                                         <a  class="btn btn-warning pull-left" href="{{ url('/user', [$user->id, 'edit']) }}">Edit</a>
